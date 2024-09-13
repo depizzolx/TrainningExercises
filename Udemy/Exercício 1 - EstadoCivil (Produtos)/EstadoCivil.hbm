@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping 
+	PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    
+<hibernate-mapping>
+	<class name="br.com.wises.uniodonto.estadoCivil.EstadoCivil" table="TDEPIZZOL_PRODUTO">
+		
+		<id name="codigo" column="CD_PRODUTO">
+			<generator class="assigned"/>
+		</id>
+		
+		<property name="descricao" column="DS_PRODUTO"/>
+		<property name="dtAlteracao" column="DT_ALTERACAO"/>
+		<property name="dtInclusao" column="DT_INCLUSAO"/>
+		<property name="nomeUsuario" column="NM_USUARIO"/>
+		<property name="indDesativado" column="IND_DESAT"/>
+		
+		
+	</class>
+</hibernate-mapping>
